@@ -6,10 +6,12 @@ import Skills from "@/components/Skills";
 import Journey from "@/components/Journey";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Preloader from "@/components/Preloader";
 
 export default function Home() {
   return (
     <>
+      <Preloader />
       <Navbar />
       <main id="main-content">
         <Hero />
