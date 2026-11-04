@@ -14,7 +14,7 @@ export default function ProjectsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12"
+          className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12 max-w-4xl mx-auto"
         >
           <div>
             <p className="text-xs font-mono text-blue-400 tracking-widest uppercase mb-2">
@@ -30,8 +30,8 @@ export default function ProjectsSection() {
           </div>
         </motion.div>
 
-        {/* Project grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Vertical Stack Layout */}
+        <div className="flex flex-col gap-8 max-w-4xl mx-auto">
           {projects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}
